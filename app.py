@@ -74,5 +74,4 @@ def page(filename):
     new_content = html_content.replace('<page/>', 'bbb')
     return render_template_string(new_content)'''
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run(debug=True, host="0.0.0.0", port='5100')
