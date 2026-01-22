@@ -1,6 +1,7 @@
 from flask import Flask, render_template, render_template_string
 import os
 import markdown
+
 app = Flask(__name__)
 
 BLOG_FOLDER = 'blogs'
