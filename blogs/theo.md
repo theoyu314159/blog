@@ -14,5 +14,5 @@
 國小一二年級就開始拉琴，一直到五六年級開始拉，國中參加了縣賽得到甲等(不怎麼強)，也參加了學校弦樂團，雖然不怎麼強，但當上了團長，讓我在樂團中得到自信。
 
 ## 社群軟體
-[threads](https://www.threads.com/@theoyu314159)
+[ig](https://www.instagram.com/theoyu314159/)
 [github](https://github.com/theoyu314159)

@@ -5,6 +5,7 @@ import markdown
 app = Flask(__name__)
 
 BLOG_FOLDER = 'blogs'
+SECRET_FOLDER = 'secrets'
 
 @app.route('/')
 def index():
@@ -30,7 +31,7 @@ def index():
 def about():
     with open('about.html', 'r', encoding='utf-8') as f:
         html_content = f.read()
-    welcome = '<h2>歡迎來到我的程式小站</h2>\n <br> <p>這裡有很多有趣的程式文章，歡迎參觀！</p> <br> <p>作者：yulin</p> <br> <p>本網站使用的<a href="https://www.threads.com/@fusionwallvibe/post/DEpvKt8sk6o?hl=zh-hk" </a>模板<a href="https://www.threads.com/@fusionwallvibe/post/DEpvKt8sk6o?hl=zh-hk"></p> <br> <p>網站圖片來源<a href="https://www.threads.com/@wallpaperz_4you/post/DJT3cKmyjOM/hinata-wallpaper-cr-flux_ani-narutoshippuden-hinata-anime?hl=zh-hk"></a></p> <br> <p>版權所有 &copy; 2026 yulin</p>'
+    welcome = '<h2>歡迎來到我的程式小站</h2>\n <br> <p>這裡有很多有趣的程式文章，歡迎參觀！</p> <br> <p>作者：<a href="/secret">yulin</a></p> <br> <p>本網站使用的<a href="https://codepen.io/nodws/pen/mdQoEB" </a>模板</a></p> <br> <p>網站圖片來源<a href="https://www.threads.com/@wallpaperz_4you/post/DJT3cKmyjOM/hinata-wallpaper-cr-flux_ani-narutoshippuden-hinata-anime?hl=zh-hk"></a></p> <br> <p>版權所有 &copy; 2026 yulin</p>'
     new_content = html_content.replace('<about/>', welcome)
     return render_template_string(new_content)
 
@@ -74,5 +75,19 @@ def page(filename):
         html_content = f.read()
     new_content = html_content.replace('<page/>', 'bbb')
     return render_template_string(new_content)'''
+
+@app.route('/secret')
+def secret():
+    path = os.path.join(SECRET_FOLDER, 'secret.md')
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # 讀取 page.html 並顯示內容
+        with open('secret.html', 'r', encoding='utf-8') as f:
+            html_content = markdown.markdown(content)
+            return render_template_string(f.read().replace('<word/>', html_content))
+    else:
+        return "找不到該檔案", 404
 
 app.run(debug=True, host="0.0.0.0", port='5100')
