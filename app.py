@@ -78,7 +78,7 @@ def page(filename):
 
 @app.route('/secret')
 def secret():
-    path = os.path.join(SECRET_FOLDER, 'secret.md')
+    path = os.path.join(SECRET_FOLDER, 'secret2.md')
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8') as f:
             content = f.read()

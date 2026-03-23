@@ -53,4 +53,10 @@ theoyu314159
 謝謝大家看完我的故事 我也不知道接下來的我是怎麼樣
 也希望你能繼續觀看我其他文章
 有事情歡迎私訓ig(主頁有)
+
+下面有幾篇我在其他網站匿名發的關於這些事情的文章(在那邊我叫冷掉的土司)
+[#心情 關於我的故事...](https://meteor.today/article/ivoIKM)
+[#討論 如果你身旁有自殘的好朋友...](https://meteor.today/article/WPWlTP)
+[#心情 冷掉的吐司日常](https://meteor.today/article/f26srQ)
+
 [背景圖片來源 這是我很喜歡的日向雛田，她個性應該可以說是我理想型吧 看緣分囉](https://www.threads.com/@fusionwallvibe/post/DT8BpCsjrrP/hinata-hyuga-phone-pc-tablet-wallpaper)
